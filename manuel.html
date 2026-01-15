@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuel & FAQ</title>
+  <meta name="description" content="Règles du jeu du nombre mystère et FAQ interactive.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Navigation principale">
+        <button class="site-nav__toggle" type="button" aria-controls="site-menu" aria-expanded="false">
+          <span class="site-nav__toggle-icon" aria-hidden="true"></span>
+          <span class="site-nav__toggle-label">Menu</span>
+        </button>
+        <div class="site-nav__panel" id="site-menu">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Accueil</a></li>
+            <li><a class="site-nav__link" href="manuel.html" aria-current="page">Manuel & FAQ</a></li>
+            <li><a class="site-nav__link" href="apropos.html">À propos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="site-main">
+    <div class="container">
+      <section class="card section" aria-label="Manuel">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+          <i class="nes-icon coin is-medium"></i>
+          <h1 style="margin:0;">Manuel du Jeu</h1>
+        </div>
+        <p>
+          Devinez le nombre mystère entre 0 et 100.<br>
+          Utilisez le bouton ou la touche Entrée pour valider.<br>
+          Suivez les indices et l'historique pour gagner.
+        </p>
+        <div class="card card--soft section" style="margin-top:14px;">
+          <p style="margin:0;"><strong>Astuce :</strong> si tu joues sur mobile, l’historique reste scrollable pour ne pas allonger la page.</p>
+        </div>
+      </section>
+
+      <section id="faq" class="card section" style="margin-top:18px;" aria-label="FAQ">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+          <i class="nes-icon is-medium star"></i>
+          <h2 style="margin:0;">FAQ</h2>
+        </div>
+        <div id="faq-container"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <small>© 2026 Projet IWEB — <a href="mailto:samuel.barman@eduvaud.ch">✉ samuel.barman@eduvaud.ch</a></small>
+    </div>
+  </footer>
+
+  <script src="assets/js/faq.js"></script>
+</body>
+</html>

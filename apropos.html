@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos</title>
+  <meta name="description" content="À propos de l’auteur et formulaire de contact.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Navigation principale">
+        <button class="site-nav__toggle" type="button" aria-controls="site-menu" aria-expanded="false">
+          <span class="site-nav__toggle-icon" aria-hidden="true"></span>
+          <span class="site-nav__toggle-label">Menu</span>
+        </button>
+        <div class="site-nav__panel" id="site-menu">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Accueil</a></li>
+            <li><a class="site-nav__link" href="manuel.html">Manuel & FAQ</a></li>
+            <li><a class="site-nav__link" href="apropos.html" aria-current="page">À propos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="site-main">
+    <div class="container">
+      <section class="card section" aria-label="À propos">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+          <i class="nes-icon heart is-medium"></i>
+          <h1 style="margin:0;">À propos de l'auteur</h1>
+        </div>
+        <div class="card card--soft section" style="display:flex; gap:16px; align-items:center; flex-wrap:wrap; flex-direction:column; text-align:center;">
+          <img src="assets/img/photo.jpg" alt="Photo de l’auteur" style="width:150px; border-radius:14px; border:1px solid rgba(15,23,42,0.12);">
+          <p style="margin:0; max-width:70ch;">Enchanté, moi c'est Sam ! Je suis l’auteur de ce projet. Passionné par le développement web et fondateur de <a href="https://site-simple.ch/" target="_blank" rel="noopener">site-simple.ch</a>, j’ai créé ce jeu du nombre mystère dans le cadre de mon cours IWEB. N’hésite pas à me contacter via le formulaire ci-dessous !</p>
+        </div>
+      </section>
+
+      <section class="card section" style="margin-top:18px;" aria-label="Contact">
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:10px;">
+          <i class="nes-icon is-medium gmail"></i>
+          <h2 style="margin:0;">Contact</h2>
+        </div>
+        <form id="contact-form">
+          <label for="name">Nom</label>
+          <input class="nes-input" type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input class="nes-input" type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea class="nes-textarea" id="message" name="message" required></textarea>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center;">
+            <button class="nes-btn is-success" type="submit">Envoyer</button>
+            <div id="form-feedback" aria-live="polite"></div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <small>© 2026 Projet IWEB — <a href="mailto:samuel.barman@eduvaud.ch">✉ samuel.barman@eduvaud.ch</a></small>
+    </div>
+  </footer>
+
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

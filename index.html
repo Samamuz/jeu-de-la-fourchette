@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Jeu du Nombre Mystère</title>
+  <meta name="description" content="Jeu du nombre mystère (0-100) avec difficultés, historique et indices.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/audio-manager.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <nav class="site-nav" aria-label="Navigation principale">
+        <button class="site-nav__toggle" type="button" aria-controls="site-menu" aria-expanded="false">
+          <span class="site-nav__toggle-icon" aria-hidden="true"></span>
+          <span class="site-nav__toggle-label">Menu</span>
+        </button>
+        <div class="site-nav__panel" id="site-menu">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html" aria-current="page">Accueil</a></li>
+            <li><a class="site-nav__link" href="manuel.html">Manuel & FAQ</a></li>
+            <li><a class="site-nav__link" href="apropos.html">À propos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" class="site-main">
+    <div class="container">
+      <section class="card section hero" aria-label="Jeu">
+
+        <h1 class="hero__title nes-text is-success">Jeu du Nombre Mystère</h1>
+        <p class="hero__subtitle">Choisis une difficulté, propose un nombre, et suis les indices jusqu’à trouver le bon.</p>
+
+        <div class="nes-container is-rounded is-dark game-shell">
+          <div id="game-container"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <small>© 2026 Projet IWEB</small>
+      <small><a href="mailto:samuel.barman@eduvaud.ch">✉ samuel.barman@eduvaud.ch</a></small>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
